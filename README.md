@@ -10,6 +10,8 @@
 powershell -NoProfile -ExecutionPolicy Bypass -File C:\path\to\WorkWithCC\sync.ps1 -Target C:\path\to\MyProject -WhatIf
 ```
 
+也可以把專案資料夾拖到 `sync-preview.bat`（預覽）或 `sync.bat`（直接同步）上，或雙擊後輸入路徑。
+
 確認後拿掉 `-WhatIf` 執行，再到專案裡檢查變更並 commit。Windows PowerShell 5.1（`powershell`）和 PowerShell 7（`pwsh`）都能執行；腳本不會執行任何 git 指令。
 
 第一次套用時：
